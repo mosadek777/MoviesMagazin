@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>route exam mohamed sadek</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="nav-parent  h-100 d-flex">
+
+        <div class="nav-menu px-5 d-flex flex-column justify-content-between "  >
+            <div class= "animated-slider animate__animated" >
+                <p class="my-4" id="nowPlaying"><a href="#" class="my-4 me-5 ms-2    text-decoration-none text-white item-hover ">Now playing</a></p>
+                <p class="my-4" id="popular"><a href="#" class="my-4 me-5 ms-2   text-decoration-none text-white item-hover">Popular</a></p>
+                <p class="my-4" id="topRated"><a href="#" class="my-4 me-5 ms-2   text-decoration-none text-white item-hover">Top Rated</a></p>
+                <p class="my-4" id="trending"><a href="#" class="my-4 me-5 ms-2   text-decoration-none text-white item-hover">Trending</a></p>
+                <p class="my-4" id="upcoming"><a href="#" class="my-4 me-5 ms-2   text-decoration-none text-white item-hover">Upcoming</a></p>
+                <p class="my-4" id="contactUS"><a href="#contactUs" class="my-4 me-5 ms-2   text-decoration-none text-white item-hover">Contact Us</a></p>
+            </div>
+            <div class="social-icons my-4 text-white ">
+
+                <i class="fab fa-facebook-f mx-2 item-hover"></i>
+
+                <i class="fab fa-twitter mx-2 item-hover"></i>
+
+                <i class="fas fa-globe mx-2 item-hover"></i>
+
+            </div>
+
+            <div class="copyRights text-white">
+                <p>Copyright Mo 2021 All Rights Reserved.</p>
+            </div>
+        </div>
+
+
+
+        <div class="slider d-flex flex-column justify-content-between">
+
+            <div class="logo mx-auto">
+                <img src="images/logo.png" class="w-50 imgLogo" alt="">
+            </div>
+
+            <div class="toggle-menu" >
+                <i class="fas fa-align-justify fs-3" id="toggleBtn"></i>
+            </div>
+            <div class="other-icons">
+                <div class="earth-icon">
+                    <i class="fas fa-globe "></i>
+                </div>
+                <div class="share-icon my-4">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <!--start this section for search inputs سيكشن السيرش لل inputs-->
+    <section class="pt-5">
+        <div class="container w-75 ">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="moviesWord">
+                        <input type="text" id="firstSearch" class="form-control text-center mb-4"
+                            placeholder="get movies by word">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="moviesWord">
+                        <input type="text" id="secondSearch" class="form-control text-center" placeholder="search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end this section for search inputs سيكشن السيرش لل inputs-->
+
+
+
+    <!--start of section of films-->
+    <section>
+        <div class="container my-1 py-2">
+            <div class="showMoviesInArr row ">
+
+            </div>
+            <div class="row displayMovies">
+                <!-- <div class="col-md-6 col-lg-4 shadow rounded my-2">
+                    <div class="filmContents position-relative">
+                        <div class="film">
+                            <img src="images/10.jpg" class="w-100 img-fluid rounded" alt="">
+                            <div class="filmLayer d-flex align-items-center text-center ">
+                                <div class="film-info ">
+                                    <h2>Lorem, ipsum dolor.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsam quos
+                                        distinctio quaerat nulla unde? Nemo distinctio id commodi atque?</p>
+                                    <p>rate 5.8</p>
+                                    <p>2021 Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+            </div>
+        </div>
+    </section>
+    <!--end of section of films-->
+
+    <!-- start of the section contact us -->
+    <section id="contactUs">
+        <div class="container">
+            <h2 class="contactHead my-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-details">
+                        <input type="text" class="forms form-control mb-2 " id="userName" placeholder="Enter Your Name">
+                        <div id="nameAlert" class="alert alert-danger d-none">name should start with capital letter contains from 2 to 8 characters</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-details">
+                        <input type="text" id="userEmail" class="forms form-control" placeholder="Enter Your Email">
+                        <div id="emailAlert" class="alert alert-danger d-none">email should contains @ and .com</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-details">
+                        <input type="text" id="userPhone" class="forms form-control" placeholder="Enter Your phone">
+                        <div id="phoneAlert" class="alert alert-danger d-none">phone should contains 11 digits (011- 015 - 012-010)</div>
+                    
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-details">
+                        <input type="text" id="userAge" class="forms form-control" placeholder="Enter Your Age">
+                        <div id="ageAlert" class="alert alert-danger d-none">age should be from 20 to 80</div>
+                    
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-details">
+                        <input type="password" id="userPassword" class="forms form-control" placeholder="Enter Your password">
+                        <div id="passAlert" class="alert alert-danger d-none">entre valid password *Minimum eight characters, at least one letter and one number:*</div>
+                    
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-details">
+                        <input type="password" id="userRepass" class="forms form-control" placeholder="Re-enter your password">
+                    </div>
+                </div>
+
+            </div>
+            <button id="subBtn" class="btn btn-danger ">Submit</button>
+        </div>
+    </section>
+    <!-- end of the section contact us -->
+
+
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

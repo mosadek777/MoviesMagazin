@@ -1,0 +1,121 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #0D0D0D;
+    font-family: 'Segoe UI Light';
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 24px;
+
+}
+#toggleBtn
+{
+cursor: pointer;
+}
+.item-hover:hover
+{
+    color: #ff655c !important;
+    transition: .5s ;
+    cursor: pointer;
+}
+.nav-parent
+{
+    position: fixed;
+    z-index: 99999999;
+}
+.slider
+{
+    width: 60px;
+    background-color: white;
+    height: 100vh;
+    text-align: center;
+}
+.nav-menu
+{
+    width: 255px;
+    background-color: #0D0D0D;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 500;
+}
+.logo
+{
+    padding: 30px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+#firstSearch,#secondSearch
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.7) ;
+    border-radius: 0;
+    color: white;
+}
+
+.filmLayer
+{
+    
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 100%;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: top 1s , display 1s;
+
+}
+.filmContents
+{
+    overflow: hidden;
+}
+.film:hover .filmLayer
+{
+   top: 0%;
+   
+  
+   
+}
+.forms
+{
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.7) ;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: start;
+    cursor: text;
+}
+.forms::placeholder
+{
+    text-align: center;
+}
+
+
+.form-details
+{
+    margin-bottom: 1rem;
+}
+
+.contactHead
+{
+font-size: 2rem;
+line-height: 38px;
+color: rgb(248, 249, 250);
+font-weight: 500;
+}
